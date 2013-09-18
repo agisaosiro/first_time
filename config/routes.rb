@@ -1,4 +1,8 @@
 FirstTime::Application.routes.draw do
+
+  get 'hello' => 'list#hello'
+  get 'bye' => 'list#bye'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +43,7 @@ FirstTime::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
